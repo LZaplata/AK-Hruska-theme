@@ -1,0 +1,121 @@
+@import "variables"
+
+/***** toggle main menu dropdown on hover *****/
+
+//header
+    #menu
+        .dropdown
+            .dropdown-menu
+                display: none
+
+                &.show
+                    margin-top: -2px !important
+
+            &:hover, &:focus, &:active
+                .dropdown-menu
+                    display: block
+
+/***** end toggle main menu dropdown on hover *****/
+
+h3
+    font-weight: 700
+
+.list-custom
+    li
+        display: flex
+        align-items: baseline
+
+        &:before
+            content: "\f133"
+            font-family: bootstrap-icons
+            position: relative
+            margin-right: .5rem
+            font-size: .8rem
+            top: 1px
+
+.btn-secondary
+    &:hover, &:focus, &:active
+        background: $tertiary
+        border-color: $tertiary
+
+.btn-outline-quaternary
+    color: $white !important
+
+    &:hover
+        border-color: $white
+        background: $white
+        color: $tertiary !important
+
+header
+    #menu
+        .nav
+            li
+                margin-left: 1rem
+
+                a
+                    text-transform: uppercase
+                    font-family: $font-family-base
+
+#banner
+    h1
+        font-size: 5rem
+        line-height: 5rem
+
+        @include media-breakpoint-down(xl)
+            font-size: 4rem
+            line-height: 4rem
+
+        @include media-breakpoint-down(md)
+            font-size: 2rem
+            line-height: 2rem
+
+    p
+        &.h2
+            font-family: $font-family-base
+            font-weight: 400
+
+#sluzby
+    background: $gray-bg
+
+    #services
+        #services-accordion
+            .accordion-item
+                .accordion-header
+                    button
+                        font-size: $h3-font-size
+                        border-bottom: 1px solid $primary
+
+#nas-tym
+    @include gradient-y($purple, $primary)
+
+    .col
+        .img
+            background: $gray-bg
+
+        .text
+            .name
+                font-family: $font-family-base
+
+#kontakt
+    background: $gray-bg
+
+    form
+        .input-group
+            .input-group-text
+                padding-right: 0
+
+            .form-control
+                padding-left: .5rem
+
+    .claim
+        span
+            font-size: 4rem
+
+#copyright-container
+    .signature
+        span
+            mask: url("../images/signature.svg")
+            width: 85px
+            height: 25px
+            mask-size: cover
+            display: block

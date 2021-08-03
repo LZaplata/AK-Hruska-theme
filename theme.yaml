@@ -1,0 +1,14 @@
+name: 'AK Hruška'
+description: 'Them for Hruška law office.'
+author: 'Lukáš Záplata'
+homepage: ''
+authorCode: LZaplata
+code: akhruska
+parent: ''
+database: '0'
+require:
+    - RainLab.Pages
+    - RainLab.Blog
+    - AnandPatel.WysiwygEditors
+    - Raviraj.Rjgallery
+    - Martin.Forms

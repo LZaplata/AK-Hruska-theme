@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+
+        <link rel="icon" href="{{ 'assets/images/favicon.png'|theme }}" />
+
+        <title>{{ this.page.title }}</title>
+
+        {% styles %}
+
+        <link rel="stylesheet" href="{{ [
+            'assets/css/theme.css',
+            'assets/css/bootstrap-icons.css',
+        ]|theme }}" />
+    </head>
+
+    <body class="d-flex flex-column h-100">
+        {% partial "header" %}
+
+        <main>
+            {% page %}
+        </main>
+
+        {% partial "copyright" %}
+        {% partial "offcanvas" %}
+
+        <script src="{{ [
+            'assets/js/jquery.min.js',
+            'assets/js/popper.js',
+            'assets/js/bootstrap.js'
+        ]|theme }}"></script>
+
+        {% framework %}
+        {% framework extras %}
+        {% scripts %}
+    </body>
+</html>

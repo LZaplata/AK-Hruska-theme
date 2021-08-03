@@ -1,0 +1,88 @@
+url = "/"
+layout = "default"
+title = "Úvod"
+
+[genericForm contactform]
+rules[name] = "required"
+rules[email] = "required|email"
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
+==
+<div class="container-fluid px-0 position-relative" id="banner">
+    <div class="container-lg position-absolute top-50 start-50 translate-middle">
+        <p class="h2 text-white mb-0">
+            Advokátní kancelář
+        </p>
+
+        <p class="h1 text-white mb-4 mb-sm-3 mb-xl-4">
+            Hruška
+        </p>
+
+        <p class="mb-5 mb-sm-0 mb-lg-3 mb-xl-5">
+            <a href="#kontakt" class="btn btn-outline-quaternary">
+                Objednat služby
+            </a>
+        </p>
+
+        <p class="mb-0 text-white d-sm-none d-lg-block">
+            <span class="h2">JUDr. Michal Hruška</span><br>
+            Svatojánské nám. 47, 541 01 Trutnov
+        </p>
+    </div>
+
+    <img src="{{ "assets/images/banner.jpg"|theme }}" alt="" class="img-fluid d-none d-sm-block">
+    <img src="{{ "assets/images/banner-sm.jpg"|theme }}" alt="" class="img-fluid d-sm-none">
+</div>
+
+<div class="container-fluid py-5" id="o-nas">
+    <div class="container-lg" id="about">
+        {% partial "about" %}
+    </div>
+</div>
+
+<div class="container-fluid py-5" id="sluzby">
+    <div class="container-lg" id="services">
+        <h2 class="h1 mb-4 text-primary">
+            Služby
+        </h2>
+
+        {% partial "services" %}
+    </div>
+</div>
+
+<div class="container-fluid py-5" id="nas-tym">
+    <div class="container-lg" id="team">
+        <h2 class="h1 mb-4 text-white">
+            Náš tým
+        </h2>
+
+        {% partial "team" %}
+    </div>
+</div>
+
+<div class="container-fluid py-5" id="cena">
+    <div class="container-lg" id="price">
+        <h2 class="h1 mb-4 text-primary">
+            Cena
+        </h2>
+
+        {% partial "price" %}
+    </div>
+</div>
+
+<div class="container-fluid py-5" id="kontakt">
+    <div class="container-lg" id="contact">
+        <h2 class="h1 mb-4 text-primary">
+            Kontaktujte nás
+        </h2>
+
+        {% partial "contact" %}
+    </div>
+</div>

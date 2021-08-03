@@ -1,0 +1,8 @@
+{
+    "name": "lzaplata/akhruska-theme",
+    "type": "october-theme",
+    "description": "Them for Hru\u0161ka law office.",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
