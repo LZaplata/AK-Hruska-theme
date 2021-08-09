@@ -7,8 +7,5 @@ code: akhruska
 parent: ''
 database: '0'
 require:
-    - RainLab.Pages
-    - RainLab.Blog
     - AnandPatel.WysiwygEditors
-    - Raviraj.Rjgallery
     - Martin.Forms
