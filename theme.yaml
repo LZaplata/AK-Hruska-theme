@@ -7,5 +7,4 @@ code: akhruska
 parent: ''
 database: '0'
 require:
-    - AnandPatel.WysiwygEditors
     - Martin.Forms
