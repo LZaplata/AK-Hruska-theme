@@ -8,3 +8,4 @@
 1.0.7: Fix javascript combining issue while debug mode is false
 1.0.8: Set 100% banner width
 1.0.9: Fix signature SVG in webkit browsers
+1.0.10: Line height increase for body text
