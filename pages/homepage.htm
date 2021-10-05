@@ -5,8 +5,11 @@ title = "Úvod"
 [genericForm contactform]
 rules[name] = "required"
 rules[email] = "required|email"
-messages_success = "Your form was successfully submitted"
+messages_success = "Vaše zpráva byla úspěšně odeslána"
 messages_errors = "There were errors with your submission"
+mail_enabled = 1
+mail_recipients[] = "zap@hucr.cz"
+reset_form = 1
 inline_errors = "disabled"
 sanitize_data = "disabled"
 anonymize_ip = "disabled"
