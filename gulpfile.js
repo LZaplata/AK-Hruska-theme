@@ -1,7 +1,7 @@
 let {src, dest, watch, parallel} = require("gulp");
 let sass = require("gulp-sass");
 let minify = require("gulp-clean-css");
-let themeDir = "./themes/lzaplata-bootstrap-5-sass";
+let themeDir = "./themes/lzaplata-akhruska";
 
 function sassTask() {
     return src(themeDir + "/assets/sass/theme.sass")
