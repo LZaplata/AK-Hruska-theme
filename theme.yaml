@@ -7,4 +7,4 @@ code: akhruska
 parent: ''
 database: '0'
 require:
-    - Martin.Forms
+    - blakejones.magicforms

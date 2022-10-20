@@ -4,7 +4,7 @@
 
 2. Navigate to the project root directory and install all needed packages via `npm` command.
 
-`npm i gulp gulp-sass gulp-clean-css bootstrap @popperjs/core bootstrap-icons jquery`
+`npm i gulp sass gulp-sass@4.1.1 gulp-clean-css bootstrap @popperjs/core bootstrap-icons jquery`
 
 3. Run gulp command to compile all assets.
 
